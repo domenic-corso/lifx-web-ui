@@ -1,6 +1,7 @@
 from lifxlan import LifxLAN, Light
 from flask import Flask, jsonify, request, abort, render_template
 import jsonschema
+import sys
 from lights_helper import light_to_dict
 
 app = Flask(__name__,
@@ -62,3 +63,7 @@ def change_light(mac_addr):
 @app.route('/')
 def root():
     return render_template('index.html')
+
+# Run server (with optional CLI argument port)
+port = sys.argv[1] if len(sys.argv) > 1 else 8100
+app.run(host='0.0.0.0', port=8100, debug=False)
