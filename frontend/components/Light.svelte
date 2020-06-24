@@ -9,8 +9,8 @@
     function handlePowerClick() {
         power = !power;
 
-        LightService.update(macAddress, power).then(() => {
-            dispatch('lightUpdated');
+        LightService.update(macAddress, power).catch(() => {
+            alert("Could not update light status :(");
         });
     }
 </script>

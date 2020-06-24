@@ -40,7 +40,7 @@
     </header>
     <div class="panel__content lights__container">
         {#each lights as light}
-            <Light {...light} on:lightUpdated={refreshLights} />
+            <Light {...light} />
         {/each}
     </div>
 </div>
