@@ -1,6 +1,9 @@
 # lifx-web-ui
 A web UI used to interact with LAN LIFX bulbs. This makes use of the awesome [lifxlan](https://github.com/mclarkk/lifxlan) library.
 
+## Screenshot
+![LIFX Web UI Screenshot](https://raw.githubusercontent.com/domenic-corso/lifx-web-ui/master/other/screenshot.jpg)
+
 ## Build
 Install Python dependencies
 ```shell
